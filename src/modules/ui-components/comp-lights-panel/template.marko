@@ -1,0 +1,15 @@
+<div class="comp-light-panel-wrapper" >
+	<h2 class="content-subhead">Lights Panel</h2>
+	<if test="notEmpty(data.model)">
+		<div class="row">
+		    <for each="light in data.model">
+		    	<div class="col-xs-6 col-md-3">
+		    		<div class="panel status">
+				    	<comp-light model="light" />
+		    		</div>
+		    	</div>
+		    </for>
+	    </div>	    
+	</if>
+
+</div>

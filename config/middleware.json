@@ -1,0 +1,18 @@
+{
+    "meta-router/match": {
+        "enabled": true,
+        "priority": 79,
+        "module": {
+            "name": "meta-router/middleware/match",
+            "arguments": ["path:./routes.json"]
+        }
+    },
+    "meta-router/invokeHandler": {
+        "enabled": true,
+        "priority": 1000,
+        "module": {
+            "name": "meta-router/middleware/invokeHandler",
+            "arguments": []
+        }
+    }    	
+}

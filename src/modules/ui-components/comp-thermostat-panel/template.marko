@@ -1,0 +1,17 @@
+<div class="comp-thermostats-panel-wrapper" >
+	<h2 class="content-subhead">Thermostats Panel</h2>
+	<if test="notEmpty(data.model)">
+		<div class="row">
+		    <for each="thermostat in data.model">
+		    	<div class="col-xs-6 col-md-3">
+		    		<div class="panel status panel-warning">
+				    	<comp-thermostat model="thermostat" />
+				    	<div class="panel-body text-center">
+				    		<comp-thermostat-form model="thermostat" />		    		
+				    	</div>
+		    		</div>
+		    	</div>
+		    </for>
+	    </div>
+	</if>
+</div>

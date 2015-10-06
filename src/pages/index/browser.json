@@ -1,0 +1,12 @@
+{
+    "dependencies": [
+    	"src/layouts/core",
+    	"style.less",
+
+		"src/modules/ui-components/comp-curtains-panel",
+		"src/modules/ui-components/comp-garage-panel",
+		"src/modules/ui-components/comp-lights-panel",
+		"src/modules/ui-components/comp-thermostat-panel"
+
+    ]
+}

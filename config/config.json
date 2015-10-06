@@ -1,0 +1,100 @@
+{
+
+
+    "lasso": {
+        "plugins": [
+            "lasso-less",
+            "lasso-marko"
+        ],
+        "fileWriter": {
+            "url-prefix": "/static",
+            "outputDir": "static",
+            "includeSlotNames" : true,
+            "fingerprintsEnabled": false
+        },
+
+        "minify": false,
+        "bundlingEnabled": true,
+        "resolveCssUrls": true,
+        "cacheProfile": "development"
+    },    
+
+    
+
+    
+    "i18n": {
+        "contentPath": "path:./locales",
+        "fallback": "en-US"
+    },
+    
+
+
+    "specialization": {
+    },
+
+    "middleware": {
+
+        "static": {
+            "enabled": true,
+            "priority": 20,
+            "route": "/static",
+            "module": {
+                "name": "serve-static",
+                "arguments": ["static"]
+            }
+        },
+
+        "router": {
+            "module": {
+                "arguments": [{ "directory": "path:./src/pages" }]
+            }
+        },
+
+        "favicon": {
+            "enabled": false
+        },
+
+        "compress": {
+            "enabled": true
+        },
+
+        "meta-router/match": {
+            "enabled": true,
+            "priority": 79,
+            "module": {
+                "name": "meta-router/middleware/match",
+                "arguments": ["path:./routes.json"]
+            }
+        },
+        "meta-router/invokeHandler": {
+            "enabled": true,
+            "priority": 1000,
+            "module": {
+                "name": "meta-router/middleware/invokeHandler",
+                "arguments": []
+            }
+        },
+        "appsec": {
+            "module": {
+                "arguments": [
+                    {
+                        "xframe": "SAMEORIGIN",
+                        "p3p": false,
+                        "csp": false
+                    }
+                ]
+            }
+        },
+        "csrf": {
+            "enabled": true,
+            "priority": 111,
+            "route": "/((?!api))*",
+            "module": {
+                "name": "lusca",
+                "method": "csrf",
+                "arguments": [ {} ]
+            }
+        }               
+    }
+
+}

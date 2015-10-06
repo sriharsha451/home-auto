@@ -1,0 +1,14 @@
+<div class="comp-curtains-panel-wrapper" >
+	<h2 class="base-subhead">Curtains Panel</h2>
+	<if test="notEmpty(data.model)">
+		<div class="row">
+		    <for each="curtain in data.model">
+		    	<div class="col-xs-6 col-md-3">
+		    		<div class="panel status">
+				    	<comp-curtain model="curtain" />
+		    		</div>
+		    	</div>
+		    </for>
+	    </div>	    
+	</if>	
+</div>

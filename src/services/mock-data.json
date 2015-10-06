@@ -1,0 +1,63 @@
+{
+		"model" : {
+			"lights" : [
+				{
+					"id" : 1000,
+					"name" : "Light #1",
+					"state" : "ON"
+				},
+				{
+					"id" : 1001,
+					"name" : "Light #2",
+					"state" : "OFF"					
+				}
+			],
+			"curtains" : [
+				{
+					"id" : 2000,
+					"name" : "Curtain #1",
+					"state" : "OPEN"
+				},
+				{
+					"id" : 2001,
+					"name" : "Curtain #2",
+					"state" : "CLOSED"					
+				}
+			],
+			"thermostats" : [
+				{
+					"id" : 3000,
+					"name" : "Heater #1",
+					"state" : "ON",
+					"currentTemperature" : 70,
+					"setTemperature" : 80
+				},
+				{
+					"id" : 3001,
+					"name" : "Air conditioner #1",
+					"state" : "ON",
+					"currentTemperature" : 55,
+					"setTemperature" : 50					
+				}
+			],
+			"garages" : [
+				{
+					"id" : 4000,
+					"name" : "Garage #1",
+					"state" : "OPEN",
+					"events" : {
+						"today" : []
+					}
+				},
+				{
+					"id" : 4001,
+					"name" : "Garage #2",
+					"state" : "CLOSED",
+					"events" : {
+						"today" : []
+					}
+
+				}
+			]			
+		}
+	}

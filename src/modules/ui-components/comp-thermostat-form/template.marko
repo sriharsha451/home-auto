@@ -1,0 +1,20 @@
+<!-- http://schema.org/docs/schemas.html - SEO related properties for the markup -->
+<!-- http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria - Accessibility ARIA roles -->
+<!-- https://html.spec.whatwg.org/multipage/dom.html#wai-aria - HTML Standards -->
+
+<div class="comp-thermostat-form-wrapper" w-bind="./widget" w-config="{model : data.model}">
+	<div class="panel-body text-center">                        
+	    <strong>${data.model.name}</strong>
+	</div>    
+	<form class="form-inline comp-thermostat-form">
+		<div class="form-group pull-left">
+			<input type="text" value="${data.model.setTemperature}" class="form-control input-sm" id="comp-thermostat-set-temperature__${data.model.id}" placeholder="55" size="3">
+			<button type="button" class="btn btn-default btn-sm btn-warning comp-thermostat-btn-set">SET</button>
+		</div>	
+		<div class="form-group pull-right">
+			<button type="button" class="btn btn-default btn-sm comp-thermostat-btn-state comp-thermostat-btn-state__${data.model.state}" value="${data.model.state}">${data.model.state}</button>
+		</div>	
+
+	</form>
+	
+</div>

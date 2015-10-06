@@ -1,0 +1,23 @@
+<lasso-page name="index" package-path="./browser.json"/>
+<layout-use template="../../layouts/core/core.marko">
+    <layout-put into="page-body-container">
+        <div class="hauto-main-container container">
+        	<comp-lights-panel model="data.model.lights" />
+        	<comp-thermostat-panel model="data.model.thermostats" />
+        	<comp-curtains-panel model="data.model.curtains" />
+        	<comp-garage-panel model="data.model.garages" />
+        </div>
+
+        <br/>
+        <br/>
+
+        <div>
+        	Icons from :
+        	<div><a href="https://thenounproject.com/botho/collection/simple-light-bulbs/?oq=bulb&cidx=6&i=160916">Bulb Icons</a></div>
+        	<div><a href="https://thenounproject.com/dusan.popovic.52/collection/window/?oq=curtains&cidx=0">Curtain Icons</a></div>
+        	<div><a href="https://thenounproject.com/search/?q=garage&i=108012">Garage Icons</a></div>
+        </div>
+
+    </layout-put>
+</layout-use>
+<init-widgets/>

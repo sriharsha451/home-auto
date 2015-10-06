@@ -1,0 +1,17 @@
+<div class="comp-garage-panel-wrapper" >
+	<h2 class="content-subhead">Garage Panel</h2>
+	<if test="notEmpty(data.model)">
+		<div class="row">
+		    <for each="garage in data.model">
+		    	<div class="col-xs-6 col-md-3">
+		    		<div class="panel status panel-warning">
+				    	<comp-garage model="garage" />
+				    	<div class="panel-body text-center">
+				    		<comp-garage-form model="garage" />		    		
+				    	</div>				    	
+		    		</div>		    		
+		    	</div>
+		    </for>
+	    </div>	    
+	</if>
+</div>

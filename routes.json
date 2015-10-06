@@ -1,0 +1,13 @@
+[
+    {
+        "path": "GET /",
+        "handler": "require:./src/pages/index",
+        "pageName": "home"
+    },
+    {
+        "path": "POST /api/:deviceType",
+        "handler": "require:./src/services/api-adaptor-factory.js",
+        "pageName": "home"
+    }
+
+]

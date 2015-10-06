@@ -1,0 +1,14 @@
+{
+    "dependencies": [
+
+    	"./../../modules/third-party/jquery/jquery-min.js",
+    	"./../../modules/third-party/roboto/roboto-font.css",
+    	"./../../modules/third-party/bootstrap/bootstrap.min.css",
+
+    	"./../../css/base.less",
+
+    	"./../../modules/third-party/socket-io/socketio.min.js"
+
+
+    ]
+}

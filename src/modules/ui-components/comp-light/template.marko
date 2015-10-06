@@ -1,0 +1,9 @@
+<div class="comp-light-wrapper comp-light-wrapper__${data.model.state}" w-bind="./index" w-config="{model : data.model}">
+	<div class="text-center"> 
+		<a href="#" class="comp-light-state-toggle"><strong class="comp-light-state__${data.model.state}"></strong></a>
+    	<div class="text-center">
+			${data.model.name}
+    	</div>
+	</div>
+	<comp-api-error model="data.model" />
+</div>

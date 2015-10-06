@@ -1,0 +1,11 @@
+node_modules/*
+**/static/*
+static/*
+.cache/*
+.beans/*
+log/*
+target/*
+npm-debug.log
+*.marko.js
+*.log
+restarts_*

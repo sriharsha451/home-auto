@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        "style.less",
+        "src/modules/ui-components/comp-thermostat-form",
+        "src/modules/ui-components/comp-thermostat"
+        
+    ]
+}

@@ -1,0 +1,45 @@
+<!-- http://schema.org/docs/schemas.html - SEO related properties for the markup -->
+<!-- http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria - Accessibility ARIA roles -->
+<!-- https://html.spec.whatwg.org/multipage/dom.html#wai-aria - HTML Standards -->
+
+<div class="comp-garage-form-wrapper" w-bind="./widget" w-config="{model : data.model}">
+	<form class="form-inline comp-garage-form comp-garage-form__${data.model.id}">
+		<div class="form-group pull-left">
+			<label for="comp-garage-hour">Open at :&nbsp;</label>
+			<select class="form-control comp-garage-hour" id="comp-garage-hour" >
+			  <option>00</option>			
+			  <option>01</option>
+			  <option>02</option>
+			  <option>03</option>
+			  <option>04</option>
+			  <option>05</option>
+			  <option>06</option>
+			  <option>07</option>
+			  <option>08</option>
+			  <option>09</option>
+			  <option>10</option>
+			  <option>11</option>
+			  <option>12</option>
+			  <option>13</option>
+			  <option>14</option>
+			  <option>15</option>
+			  <option>16</option>
+			  <option>17</option>
+			  <option>18</option>
+			  <option>19</option>
+			  <option>20</option>
+			  <option>21</option>
+			  <option>22</option>
+			  <option>23</option>
+			</select>			
+			<select class="form-control comp-garage-min" id="comp-garage-min" c>
+			  <option>00</option>						
+			  <option>15</option>			
+			  <option>30</option>
+			  <option>45</option>
+			</select>
+			<button type="button" class="btn btn-default btn-sm btn-warning comp-garage-btn-set">SET</button>
+		</div>	
+
+	</form>
+</div>

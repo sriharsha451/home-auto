@@ -1,0 +1,7 @@
+{
+    "dependencies": [
+        "style.less",
+        "src/modules/ui-components/comp-curtain"
+        
+    ]
+}

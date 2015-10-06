@@ -1,0 +1,6 @@
+<div class="comp-thermostat-wrapper panel-danger" w-bind="./index" w-config="{model : data.model}">
+	<div class="panel-danger  panel-heading">
+	    <h1 class="panel-title text-center">${data.model.currentTemperature}</h1>		
+	</div>
+	<comp-api-error model="data.model" />	
+</div>

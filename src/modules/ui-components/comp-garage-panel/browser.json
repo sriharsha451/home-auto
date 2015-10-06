@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        "style.less",
+        "src/modules/ui-components/comp-garage",
+        "src/modules/ui-components/comp-garage-form"
+        
+    ]
+}
