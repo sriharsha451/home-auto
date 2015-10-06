@@ -5,7 +5,7 @@
 			${data.model.name}
     	</div>
 	</div>
-	<if test="notEmpty(data.model.events.today)">
+	<if test="notEmpty(data.model.events) && notEmpty(data.model.events.today)">
 		<div class="text-center">
 			<span>Opens at: </span>
 		    <for each="event in data.model.events.today" separator=", ">$event</for>
